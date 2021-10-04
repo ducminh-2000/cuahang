@@ -15,7 +15,6 @@ class createRoom extends Component {
     }
     click = (e) => {
         e.preventDefault()
-        console.log(this.state)
         const url = this.state.textInput.replace('http://localhost:3000/', '/')
         this.props.history.push(url)
     }
